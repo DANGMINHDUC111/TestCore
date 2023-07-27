@@ -12,6 +12,7 @@ namespace WebApiCore.Data
         public DbSet<DonHang> DonHang { get; set; }
         public DbSet<DonHangChiTiet> DonHangChiTiet { get; set; }
         public DbSet<NguoiDung> NguoiDung { get; set; }
+        public DbSet<RefreshToken> RefreshToken { get; set; }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

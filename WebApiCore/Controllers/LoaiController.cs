@@ -31,6 +31,7 @@ namespace WebApiCore.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Create(LoaiModels model)
         {
             var loai = _loaiRepo.Create(model);
